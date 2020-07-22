@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class ManagerScript : MonoBehaviour
 {
-    public class Currency
+    /*public class Currency
     {
         public string currencyName = "currencyname";
         public double currencyAmount;
@@ -69,6 +69,7 @@ public class ManagerScript : MonoBehaviour
         currency1.currencyAmount += productionUpgrade2.UpgradeLevel * productionUpgrade2.UpgradePower;
         currency1DisplayText.text = currency1.currencyName + ": " + currency1.currencyAmount;
         currency2DisplayText.text = currency2.currencyName + ": " + currency2.currencyAmount;
+        buttonHP -= 
         buttonHPText.text = "The Button has " + buttonHP + " HP remaining";
     }
 
@@ -88,5 +89,5 @@ public class ManagerScript : MonoBehaviour
         //currency2.currencyAmount -= SpendPartsCost;
         //RollForNewWeapon();
 
-    }
+    }*/
 }
