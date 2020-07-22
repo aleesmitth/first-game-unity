@@ -12,4 +12,8 @@ public class Currency
             currencyName = name;
             currencyAmount = amount;
         }
+
+        public void ReceiveUpgrade(Upgrade upgrade) {
+            currencyAmount += upgrade.UpgradeValue();
+        }
 }
