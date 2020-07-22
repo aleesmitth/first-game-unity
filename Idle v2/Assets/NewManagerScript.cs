@@ -6,15 +6,16 @@ using UnityEngine.UI;
 
 public class NewManagerScript : MonoBehaviour
 {
-    public Currency currency1 = new Currency("Money", 5);
-    public Currency currency2 = new Currency("Weapon Parts", 0);
-    public Currency currency10 = new Currency("Prestige", 0);
 
-    public Upgrade clickUpgrade = new Upgrade("Click Upgrade", 0, 1, 10, 1.07); //click/wpn pow
+    private Currency currency1 = new Currency("Money", 5);
+    private Currency currency2 = new Currency("Weapon Parts", 0);
+    private Currency currency10 = new Currency("Prestige", 0);
 
-    public Upgrade productionUpgrade1 = new Upgrade("Production Upgrade 1"); //Money passive income
-    public Upgrade productionUpgrade2 = new Upgrade("Production Upgrade 2", 0, 5, 300, 1.07);//Money passive income
-    public Upgrade automaticWeaponUpgrade = new Upgrade("Auto Weapon 1", 0, 1, 500, 1.07);//HP passive damage
+    private Upgrade clickUpgrade = new Upgrade("Click Upgrade", 0, 1, 10, 1.07); //click/wpn pow
+
+    private Upgrade productionUpgrade1 = new Upgrade("Production Upgrade 1"); //Money passive income
+    private Upgrade productionUpgrade2 = new Upgrade("Production Upgrade 2", 0, 5, 300, 1.07);//Money passive income
+    private Upgrade automaticWeaponUpgrade = new Upgrade("Auto Weapon 1", 0, 1, 500, 1.07);//HP passive damage
 
     public TextMeshProUGUI currency1DisplayText; //money display
     public TextMeshProUGUI currency2DisplayText; //parts display
@@ -35,10 +36,10 @@ public class NewManagerScript : MonoBehaviour
     {
         currency1.currencyAmount += productionUpgrade1.UpgradeLevel * productionUpgrade1.UpgradePower; //idle money1
         currency1.currencyAmount += productionUpgrade2.UpgradeLevel * productionUpgrade2.UpgradePower; //idle money 2
-        currency1DisplayText.text = currency1.currencyName + ": " + currency1.currencyAmount;
-        currency2DisplayText.text = currency2.currencyName + ": " + currency2.currencyAmount;
+        currency1DisplayText.text = currency1.currencyName + ": " + currency1.currencyAmount.ToString("F0");
+        currency2DisplayText.text = currency2.currencyName + ": " + currency2.currencyAmount.ToString("F0");
         buttonHP -= automaticWeaponUpgrade.UpgradeLevel * automaticWeaponUpgrade.UpgradePower; //idle HP damage
-        buttonHPText.text = "The Button has " + buttonHP + " HP remaining";
+        buttonHPText.text = "The Button has " + buttonHP.ToString("f0") + " HP remaining";
     }
 
     public void OnClickButton()
