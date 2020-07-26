@@ -1,0 +1,2597 @@
+fileFormatVersion: 2
+guid: 10571938729b1b9498a907ed402c51b4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6494077358756663787
+    second: ProjectUtumno_edit2_0
+  - first:
+      213: -1856960809065698818
+    second: ProjectUtumno_edit2_1
+  - first:
+      213: -654259285565654862
+    second: ProjectUtumno_edit2_2
+  - first:
+      213: 5802112222247171728
+    second: ProjectUtumno_edit2_3
+  - first:
+      213: 8653462723321761478
+    second: ProjectUtumno_edit2_4
+  - first:
+      213: -6568333167045653272
+    second: ProjectUtumno_edit2_5
+  - first:
+      213: 6624549532242454381
+    second: ProjectUtumno_edit2_6
+  - first:
+      213: 6664991259012051563
+    second: ProjectUtumno_edit2_7
+  - first:
+      213: -3904868660344227803
+    second: ProjectUtumno_edit2_8
+  - first:
+      213: -6412767979624913756
+    second: ProjectUtumno_edit2_9
+  - first:
+      213: -2978134429020452166
+    second: ProjectUtumno_edit2_10
+  - first:
+      213: 2772802866125793859
+    second: ProjectUtumno_edit2_11
+  - first:
+      213: -7206150847064049522
+    second: ProjectUtumno_edit2_12
+  - first:
+      213: 8698214186361877270
+    second: ProjectUtumno_edit2_13
+  - first:
+      213: -8149534632425209150
+    second: ProjectUtumno_edit2_14
+  - first:
+      213: -3347952019931445738
+    second: ProjectUtumno_edit2_15
+  - first:
+      213: 7930146445355483170
+    second: ProjectUtumno_edit2_16
+  - first:
+      213: -4155496331395068476
+    second: ProjectUtumno_edit2_17
+  - first:
+      213: -8891061451059909633
+    second: ProjectUtumno_edit2_18
+  - first:
+      213: 5570087986177701108
+    second: ProjectUtumno_edit2_19
+  - first:
+      213: -7662283938601399864
+    second: ProjectUtumno_edit2_20
+  - first:
+      213: 5280775557903988978
+    second: ProjectUtumno_edit2_21
+  - first:
+      213: 4243999476076592930
+    second: ProjectUtumno_edit2_22
+  - first:
+      213: 2501782599465119922
+    second: ProjectUtumno_edit2_23
+  - first:
+      213: -4465142594848983642
+    second: ProjectUtumno_edit2_24
+  - first:
+      213: 3303738410251608581
+    second: ProjectUtumno_edit2_25
+  - first:
+      213: 7089629426558086608
+    second: ProjectUtumno_edit2_26
+  - first:
+      213: 6911667833686899185
+    second: ProjectUtumno_edit2_27
+  - first:
+      213: -2447199768426070079
+    second: ProjectUtumno_edit2_28
+  - first:
+      213: -37672148829500198
+    second: ProjectUtumno_edit2_29
+  - first:
+      213: -1707224496150551408
+    second: ProjectUtumno_edit2_30
+  - first:
+      213: -5361150134985263830
+    second: ProjectUtumno_edit2_31
+  - first:
+      213: 8061095375598895100
+    second: ProjectUtumno_edit2_32
+  - first:
+      213: -162044709293952951
+    second: ProjectUtumno_edit2_33
+  - first:
+      213: 7544955168007892162
+    second: ProjectUtumno_edit2_34
+  - first:
+      213: 2458249064780856287
+    second: ProjectUtumno_edit2_35
+  - first:
+      213: -6618005376898663703
+    second: ProjectUtumno_edit2_36
+  - first:
+      213: -7887283159292505858
+    second: ProjectUtumno_edit2_37
+  - first:
+      213: -5351384326652149278
+    second: ProjectUtumno_edit2_38
+  - first:
+      213: 8822337811202901013
+    second: ProjectUtumno_edit2_39
+  - first:
+      213: -6392057800418974589
+    second: ProjectUtumno_edit2_40
+  - first:
+      213: 4234336896323384784
+    second: ProjectUtumno_edit2_41
+  - first:
+      213: -6457864868636963451
+    second: ProjectUtumno_edit2_42
+  - first:
+      213: -783961887084841509
+    second: ProjectUtumno_edit2_43
+  - first:
+      213: -801491640908022825
+    second: ProjectUtumno_edit2_44
+  - first:
+      213: -7627327780639376752
+    second: ProjectUtumno_edit2_45
+  - first:
+      213: 6316455063093924912
+    second: ProjectUtumno_edit2_46
+  - first:
+      213: 6305442553281320616
+    second: ProjectUtumno_edit2_47
+  - first:
+      213: 2934721630507301533
+    second: ProjectUtumno_edit2_48
+  - first:
+      213: 4014124905649593369
+    second: ProjectUtumno_edit2_49
+  - first:
+      213: -1097109816118775397
+    second: ProjectUtumno_edit2_50
+  - first:
+      213: -446012241240801052
+    second: ProjectUtumno_edit2_51
+  - first:
+      213: -5865184607591747509
+    second: ProjectUtumno_edit2_52
+  - first:
+      213: -3070634125097652648
+    second: ProjectUtumno_edit2_53
+  - first:
+      213: -4194808931352614667
+    second: ProjectUtumno_edit2_54
+  - first:
+      213: -5654439669817658644
+    second: ProjectUtumno_edit2_0
+  - first:
+      213: -7354336760609936133
+    second: ProjectUtumno_edit2_1
+  - first:
+      213: -231419482482027225
+    second: ProjectUtumno_edit2_2
+  - first:
+      213: 8144983310900744490
+    second: ProjectUtumno_edit2_3
+  - first:
+      213: 3161633659048341763
+    second: ProjectUtumno_edit2_4
+  - first:
+      213: 6229297366213556696
+    second: ProjectUtumno_edit2_5
+  - first:
+      213: -1344313388967638472
+    second: ProjectUtumno_edit2_6
+  - first:
+      213: 8456218208237444846
+    second: ProjectUtumno_edit2_7
+  - first:
+      213: -8423550751429172359
+    second: ProjectUtumno_edit2_8
+  - first:
+      213: 1475673908237327336
+    second: ProjectUtumno_edit2_9
+  - first:
+      213: -1414192303887204063
+    second: ProjectUtumno_edit2_10
+  - first:
+      213: -3916296716446521305
+    second: ProjectUtumno_edit2_11
+  - first:
+      213: 6635042597722207983
+    second: ProjectUtumno_edit2_12
+  - first:
+      213: -8730134259941356753
+    second: ProjectUtumno_edit2_13
+  - first:
+      213: 429567308906231586
+    second: ProjectUtumno_edit2_14
+  - first:
+      213: 3641889044626709832
+    second: ProjectUtumno_edit2_15
+  - first:
+      213: 6985630570063737734
+    second: ProjectUtumno_edit2_16
+  - first:
+      213: 6632305670074279485
+    second: ProjectUtumno_edit2_17
+  - first:
+      213: 3845876859709949802
+    second: ProjectUtumno_edit2_18
+  - first:
+      213: -8916351883421049295
+    second: ProjectUtumno_edit2_19
+  - first:
+      213: 2200258457830850869
+    second: ProjectUtumno_edit2_20
+  - first:
+      213: 36023642108854881
+    second: ProjectUtumno_edit2_21
+  - first:
+      213: 4840098420682715892
+    second: ProjectUtumno_edit2_22
+  - first:
+      213: 6828742339850993551
+    second: ProjectUtumno_edit2_23
+  - first:
+      213: 8068427180571759269
+    second: ProjectUtumno_edit2_24
+  - first:
+      213: -3296570911157133152
+    second: ProjectUtumno_edit2_25
+  - first:
+      213: -4176991513519918681
+    second: ProjectUtumno_edit2_26
+  - first:
+      213: -3455348530607709224
+    second: ProjectUtumno_edit2_27
+  - first:
+      213: -4198856703443940577
+    second: ProjectUtumno_edit2_28
+  - first:
+      213: -6646001262042552663
+    second: ProjectUtumno_edit2_29
+  - first:
+      213: 8139720234387174342
+    second: ProjectUtumno_edit2_30
+  - first:
+      213: 3528740574593251397
+    second: ProjectUtumno_edit2_31
+  - first:
+      213: -6689668977093486373
+    second: ProjectUtumno_edit2_32
+  - first:
+      213: 860376267582691320
+    second: ProjectUtumno_edit2_33
+  - first:
+      213: -628952456813302186
+    second: ProjectUtumno_edit2_34
+  - first:
+      213: 8970169761085386500
+    second: ProjectUtumno_edit2_35
+  - first:
+      213: -8796783534660102141
+    second: ProjectUtumno_edit2_36
+  - first:
+      213: -919998639440930315
+    second: ProjectUtumno_edit2_37
+  - first:
+      213: 1228119662717516654
+    second: ProjectUtumno_edit2_38
+  - first:
+      213: 3156772809781639501
+    second: ProjectUtumno_edit2_39
+  - first:
+      213: 6192933034598618604
+    second: ProjectUtumno_edit2_40
+  - first:
+      213: 4224242337681127585
+    second: ProjectUtumno_edit2_41
+  - first:
+      213: -490354011218049536
+    second: ProjectUtumno_edit2_42
+  - first:
+      213: 8296641328043529747
+    second: ProjectUtumno_edit2_43
+  - first:
+      213: -1316093085787303558
+    second: ProjectUtumno_edit2_44
+  - first:
+      213: 8983682499602595892
+    second: ProjectUtumno_edit2_45
+  - first:
+      213: -2491394310839147443
+    second: ProjectUtumno_edit2_46
+  - first:
+      213: -6557492225144407122
+    second: ProjectUtumno_edit2_47
+  - first:
+      213: 9119233920262738661
+    second: ProjectUtumno_edit2_48
+  - first:
+      213: -3353913368605518310
+    second: ProjectUtumno_edit2_49
+  - first:
+      213: -8246785414336913620
+    second: ProjectUtumno_edit2_50
+  - first:
+      213: 8266857506860952108
+    second: ProjectUtumno_edit2_51
+  - first:
+      213: -3556827844776436780
+    second: ProjectUtumno_edit2_52
+  - first:
+      213: -6021016812743077804
+    second: ProjectUtumno_edit2_53
+  - first:
+      213: -3431403275389186283
+    second: ProjectUtumno_edit2_54
+  - first:
+      213: -1630179188552604639
+    second: ProjectUtumno_edit2_55
+  - first:
+      213: -3863418820347635442
+    second: ProjectUtumno_edit2_56
+  - first:
+      213: -1655873771235344767
+    second: ProjectUtumno_edit2_57
+  - first:
+      213: -2647066337912235132
+    second: ProjectUtumno_edit2_58
+  - first:
+      213: 4729962631939964927
+    second: ProjectUtumno_edit2_59
+  - first:
+      213: 264238524293712585
+    second: ProjectUtumno_edit2_60
+  - first:
+      213: 783719471431983999
+    second: ProjectUtumno_edit2_61
+  - first:
+      213: 3930982442424586288
+    second: ProjectUtumno_edit2_62
+  - first:
+      213: -6803218467739758248
+    second: ProjectUtumno_edit2_63
+  - first:
+      213: 4988665723387549819
+    second: ProjectUtumno_edit2_64
+  - first:
+      213: -698530855944134846
+    second: ProjectUtumno_edit2_65
+  - first:
+      213: -623212352639770450
+    second: ProjectUtumno_edit2_66
+  - first:
+      213: -3160472794905315527
+    second: ProjectUtumno_edit2_67
+  - first:
+      213: 8103327107649352716
+    second: ProjectUtumno_edit2_68
+  - first:
+      213: -7323714111472151271
+    second: ProjectUtumno_edit2_69
+  - first:
+      213: 1326004005406552924
+    second: ProjectUtumno_edit2_70
+  - first:
+      213: -5934073573072465130
+    second: ProjectUtumno_edit2_71
+  - first:
+      213: 865317308671743189
+    second: ProjectUtumno_edit2_72
+  - first:
+      213: -5190059013584629369
+    second: ProjectUtumno_edit2_73
+  - first:
+      213: 8778101626270535472
+    second: ProjectUtumno_edit2_74
+  - first:
+      213: -5838395375837700064
+    second: ProjectUtumno_edit2_75
+  - first:
+      213: 2793153830225545523
+    second: ProjectUtumno_edit2_76
+  - first:
+      213: -5515470754871979476
+    second: ProjectUtumno_edit2_77
+  - first:
+      213: 3841100024979463903
+    second: ProjectUtumno_edit2_78
+  - first:
+      213: 3841261295718393224
+    second: ProjectUtumno_edit2_79
+  - first:
+      213: -5464697440329586646
+    second: ProjectUtumno_edit2_80
+  - first:
+      213: 7498241748631806419
+    second: ProjectUtumno_edit2_81
+  - first:
+      213: 7827669295354869312
+    second: ProjectUtumno_edit2_82
+  - first:
+      213: -2296381929291469706
+    second: ProjectUtumno_edit2_83
+  - first:
+      213: 3576012492681495022
+    second: ProjectUtumno_edit2_84
+  - first:
+      213: -9109505169853963819
+    second: ProjectUtumno_edit2_85
+  - first:
+      213: -8414746928261214743
+    second: ProjectUtumno_edit2_86
+  - first:
+      213: -8369051497452103361
+    second: ProjectUtumno_edit2_87
+  - first:
+      213: 1570594143342961280
+    second: ProjectUtumno_edit2_88
+  - first:
+      213: -6118959463963732521
+    second: ProjectUtumno_edit2_89
+  - first:
+      213: -246981089745065724
+    second: ProjectUtumno_edit2_90
+  - first:
+      213: -6460698101214591194
+    second: ProjectUtumno_edit2_91
+  - first:
+      213: 6025287842430608772
+    second: ProjectUtumno_edit2_92
+  - first:
+      213: -4555726067361725796
+    second: ProjectUtumno_edit2_93
+  - first:
+      213: 6526441555705285215
+    second: ProjectUtumno_edit2_94
+  - first:
+      213: 4311148139762193162
+    second: ProjectUtumno_edit2_95
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce234ac24156781b0800000000000000
+      internalID: -5654439669817658644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfc6f316ea520f990800000000000000
+      internalID: -7354336760609936133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 725dd80f435d9ccf0800000000000000
+      internalID: -231419482482027225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2159b3da2bc80170800000000000000
+      internalID: 8144983310900744490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 301be75df0160eb20800000000000000
+      internalID: 3161633659048341763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d97f6943f8e27650800000000000000
+      internalID: 6229297366213556696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83a48cf581a085de0800000000000000
+      internalID: -1344313388967638472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeede2d48a58a5570800000000000000
+      internalID: 8456218208237444846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 973e691b839891b80800000000000000
+      internalID: -8423550751429172359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eb5cc0e995aa7410800000000000000
+      internalID: 1475673908237327336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_10
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12146b2a797cf5ce0800000000000000
+      internalID: -1414192303887204063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7282d25c2e486a9c0800000000000000
+      internalID: -3916296716446521305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_12
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe631d2b618641c50800000000000000
+      internalID: 6635042597722207983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_13
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2b4ab2152558d680800000000000000
+      internalID: -8730134259941356753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_14
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 227f976013126f500800000000000000
+      internalID: 429567308906231586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_15
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d9c506ac69a8230800000000000000
+      internalID: 3641889044626709832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_16
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68332c4fdf1f1f060800000000000000
+      internalID: 6985630570063737734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_17
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3626921edeaa0c50800000000000000
+      internalID: 6632305670074279485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_18
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6708e8a0ac4f5530800000000000000
+      internalID: 3845876859709949802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_19
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13e9d40f331c24480800000000000000
+      internalID: -8916351883421049295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_20
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5318e01f863e88e10800000000000000
+      internalID: 2200258457830850869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_21
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1620a67cf4bff7000800000000000000
+      internalID: 36023642108854881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_22
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f2f8b2aedb7b2340800000000000000
+      internalID: 4840098420682715892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_23
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8ffc755af094ce50800000000000000
+      internalID: 6828742339850993551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_24
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a2161ab5cfc8ff60800000000000000
+      internalID: 8068427180571759269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_25
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a0e797e83a3042d0800000000000000
+      internalID: -3296570911157133152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_26
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a1f2de59585806c0800000000000000
+      internalID: -4176991513519918681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_27
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d3a5f191d22c00d0800000000000000
+      internalID: -3455348530607709224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_28
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1bc470231aaab5c0800000000000000
+      internalID: -4198856703443940577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_29
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a6e72f6019a4c3a0800000000000000
+      internalID: -6646001262042552663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_30
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c3f4b55d6816f070800000000000000
+      internalID: 8139720234387174342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_31
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54873254bda98f030800000000000000
+      internalID: 3528740574593251397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd8546b32858923a0800000000000000
+      internalID: -6689668977093486373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_33
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f7517a28aba0fb00800000000000000
+      internalID: 860376267582691320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_34
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65ea807a2138547f0800000000000000
+      internalID: -628952456813302186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_35
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40fe1782fd17c7c70800000000000000
+      internalID: 8970169761085386500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_36
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 308549a8bfb8be580800000000000000
+      internalID: -8796783534660102141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_37
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f9d74e9c128b33f0800000000000000
+      internalID: -919998639440930315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_38
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6b33fd83582b0110800000000000000
+      internalID: 1228119662717516654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_39
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4975ab252c1fcb20800000000000000
+      internalID: 3156772809781639501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_40
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce5580d88c7b1f550800000000000000
+      internalID: 6192933034598618604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_41
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a836ae66068f9a30800000000000000
+      internalID: 4224242337681127585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_42
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0060923ff99e139f0800000000000000
+      internalID: -490354011218049536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_43
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3161cd29457932370800000000000000
+      internalID: 8296641328043529747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_44
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a71dc4abf4c4cbde0800000000000000
+      internalID: -1316093085787303558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_45
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 430c4b3c2a37cac70800000000000000
+      internalID: 8983682499602595892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_46
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d44e003031acc6dd0800000000000000
+      internalID: -2491394310839147443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_47
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eabb1e6709b1ff4a0800000000000000
+      internalID: -6557492225144407122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_48
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e214f84fe60e8e70800000000000000
+      internalID: 9119233920262738661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_49
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1695d0af818471d0800000000000000
+      internalID: -3353913368605518310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_50
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2f5397eb588d8d80800000000000000
+      internalID: -8246785414336913620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_51
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2ae7315a17c9b270800000000000000
+      internalID: 8266857506860952108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_52
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dbd1e88beb93aec0800000000000000
+      internalID: -3556827844776436780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_53
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4505bc90c1d017ca0800000000000000
+      internalID: -6021016812743077804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_54
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51fc051c6e43160d0800000000000000
+      internalID: -3431403275389186283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_55
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12466124aa07069e0800000000000000
+      internalID: -1630179188552604639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_56
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e09de9a5d01626ac0800000000000000
+      internalID: -3863418820347635442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_57
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18e71a804972509e0800000000000000
+      internalID: -1655873771235344767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_58
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48bd8dfb03bb34bd0800000000000000
+      internalID: -2647066337912235132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_59
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fff37ad04f334a140800000000000000
+      internalID: 4729962631939964927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_60
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ca0080b983caa300800000000000000
+      internalID: 264238524293712585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_61
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f73a24af4b450ea00800000000000000
+      internalID: 783719471431983999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_62
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 030d30344b7ad8630800000000000000
+      internalID: 3930982442424586288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_63
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8519efc39dc1691a0800000000000000
+      internalID: -6803218467739758248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b789ea95b0d4b3540800000000000000
+      internalID: 4988665723387549819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_65
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24fdcc233e15e46f0800000000000000
+      internalID: -698530855944134846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_66
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea0654dcaa7e957f0800000000000000
+      internalID: -623212352639770450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_67
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 937f169ecbeb324d0800000000000000
+      internalID: -3160472794905315527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_68
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c04bb36321dc47070800000000000000
+      internalID: 8103327107649352716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_69
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 915df2d71d0fc5a90800000000000000
+      internalID: -7323714111472151271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_70
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c53b0011e99e66210800000000000000
+      internalID: 1326004005406552924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_71
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6139bfd768fe5ada0800000000000000
+      internalID: -5934073573072465130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_72
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d45061f189320c00800000000000000
+      internalID: 865317308671743189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_73
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78159f343d439f7b0800000000000000
+      internalID: -5190059013584629369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_74
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03f4224bbe412d970800000000000000
+      internalID: 8778101626270535472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_75
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02029ecb65ad9fea0800000000000000
+      internalID: -5838395375837700064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_76
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3398d9d1c9643c620800000000000000
+      internalID: 2793153830225545523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_77
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c22dcc6129c1573b0800000000000000
+      internalID: -5515470754871979476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_78
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fde15a72f145e4530800000000000000
+      internalID: 3841100024979463903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_79
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88560ccebc6ee4530800000000000000
+      internalID: 3841261295718393224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_80
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a282b2891ae7924b0800000000000000
+      internalID: -5464697440329586646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_81
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d1e33b942b1f0860800000000000000
+      internalID: 7498241748631806419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_82
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 046fbd850c771ac60800000000000000
+      internalID: 7827669295354869312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_83
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67ca4f35dcc9120e0800000000000000
+      internalID: -2296381929291469706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_84
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee1c3a26a6c80a130800000000000000
+      internalID: 3576012492681495022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_85
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d1254fef49849180800000000000000
+      internalID: -9109505169853963819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_86
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ed4e228040d83b80800000000000000
+      internalID: -8414746928261214743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_87
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f399a6311082bdb80800000000000000
+      internalID: -8369051497452103361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_88
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08224405d0fdbc510800000000000000
+      internalID: 1570594143342961280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_89
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d55d6389c6151ba0800000000000000
+      internalID: -6118959463963732521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_90
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 409a187e10c829cf0800000000000000
+      internalID: -246981089745065724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_91
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6274014ae4df656a0800000000000000
+      internalID: -6460698101214591194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_92
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4856e8d8e5f1e9350800000000000000
+      internalID: 6025287842430608772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_93
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c92caec674fc6c0c0800000000000000
+      internalID: -4555726067361725796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_94
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5a492f2404929a50800000000000000
+      internalID: 6526441555705285215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectUtumno_edit2_95
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a039c94446644db30800000000000000
+      internalID: 4311148139762193162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 8cb259c4ffaf514429aa7e965f7238e8
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
