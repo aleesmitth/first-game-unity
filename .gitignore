@@ -1,6 +1,12 @@
 ###
 # Unity folders and files
 ###
+##
+# Unity 2020.1
+##
+
+UserSettings/*
+UserSettings
 IGNORAR
 [Aa]ssets/AssetStoreTools*
 [Bb]uild/
@@ -88,3 +94,4 @@ _UpgradeReport_Files/
 Thumbs.db
 Desktop.ini
 .DS_Store
+Idle v2/UserSettings/EditorUserSettings.asset
