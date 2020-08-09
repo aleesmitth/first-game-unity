@@ -4,7 +4,7 @@
 ##
 # Unity 2020.1
 ##
-
+*.DotSettings
 UserSettings
 IGNORAR
 [Aa]ssets/AssetStoreTools*
