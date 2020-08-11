@@ -1,24 +1,18 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using Tests;
-using UnityEngine;
+﻿namespace TDDscripts {
+    public class Stats {
+        private const int STARTING_ENEMY_HEALTH = 100;
+        private int Health { get; set; }
 
-public class Stats {
-    private const int STARTING_ENEMY_HEALTH = 100;
-    private int Health { get; set; }
+        public Stats() {
+            this.Health = Stats.STARTING_ENEMY_HEALTH;
+        }
 
-    public Stats() {
-        this.Health = STARTING_ENEMY_HEALTH;
-    }
+        public int GetCurrentHealth() {
+            return this.Health;
+        }
 
-    public int getCurrentHealth() {
-        return this.Health;
-    }
-
-    public void GetAttackedBy(Normal normal) {
-        this.Health -= normal.Damage;
-    }
-    public void GetAttackedBy(Critical critical) {
-        this.Health -= critical.Damage;
+        public void GetDamagedFor(int damage) {
+            this.Health -= damage;
+        }
     }
 }

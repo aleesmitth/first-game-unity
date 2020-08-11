@@ -1,22 +1,20 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Transactions;
-using UnityEngine;
+﻿namespace TDDscripts {
+    public class Enemy {
 
-public class Enemy {
-
-    private Stats stats;
+        private Stats stats;
 
 
-    public Enemy() {
-        stats = new Stats();
-    }
-
-    public void GetAttackedBy(ITypeOfAttack typeOfAttack) {
-        typeOfAttack.Attack(this.stats);
-    }
-
-    public int getCurrentHealth() {
-        return stats.getCurrentHealth();
+        public Enemy() {
+            stats = new Stats();
+        }
+        public int getCurrentHealth() {
+            return stats.GetCurrentHealth();
+        }
+        public void GetAttackedBy(ITypeOfAttack typeOfAttack, int baseDamage) {
+            typeOfAttack.Attack(this.stats, baseDamage);
+        }
+        public void GetAttackedBy(ISword sword) {
+            sword.Attack(this);
+        }
     }
 }
