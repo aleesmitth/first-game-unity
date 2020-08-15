@@ -4,15 +4,19 @@ using System.Collections.Generic;
 namespace TDDscripts {
     public class NormalSword : ISword {
         private const int BASE_DAMAGE = 10;
-        public Dictionary<int, ITypeOfAttack> TypesOfAttack { get; }
+        private Dictionary<int, ITypeOfAttack> TypesOfAttack { get; }
         public NormalSword() {
             //instantiate the dictionary, and adding 2 types of attack
             this.TypesOfAttack = new Dictionary<int, ITypeOfAttack> {{0, new BasicAttack()}, {1, new CriticalAttack()}};
         }
 
 
-        public void Attack(Enemy enemy) {
-            enemy.GetAttackedBy(this.GetRandomTypeOfAttack(), NormalSword.BASE_DAMAGE);
+        public void Attack(IAttackingCharacter attackingCharacter) {
+            attackingCharacter.GetAttackedBy(this.GetRandomTypeOfAttack(), NormalSword.BASE_DAMAGE);
+        }
+
+        public void Attack(IAttackingCharacter attackingCharacter, int extraDamage) {
+            attackingCharacter.GetAttackedBy(this.GetRandomTypeOfAttack(), NormalSword.BASE_DAMAGE + extraDamage);
         }
 
         private ITypeOfAttack GetRandomTypeOfAttack() {

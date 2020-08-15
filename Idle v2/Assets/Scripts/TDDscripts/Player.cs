@@ -1,19 +1,22 @@
 ﻿namespace TDDscripts {
-    public class Enemy : IAttackingCharacter {
+    public class Player : IAttackingCharacter {
+        private Stats stats;
+        private ISword sword;
 
-        private readonly Stats stats;
-        private readonly ISword sword;
-        public Enemy(ILvl lvl) {
-            sword = new EnemyNormalSword();
+        public Player(ILvl lvl) {
             stats = new Stats();
+            sword = new NormalSword();
             stats.ApplyLvlBonuses(lvl);
         }
+
         public int getCurrentHealth() {
             return stats.GetCurrentHealth();
         }
+
         public void GetAttackedBy(ITypeOfAttack typeOfAttack, int swordBaseDamage) {
-            typeOfAttack.Attack(this.stats, swordBaseDamage);
+            typeOfAttack.Attack(stats, swordBaseDamage);
         }
+
         public void GetAttackedBy(ISword sword, int extraDamage) {
             sword.Attack(this, extraDamage);
         }
