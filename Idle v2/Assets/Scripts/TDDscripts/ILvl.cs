@@ -3,5 +3,6 @@
         int GetHealthBonus();
         int GetDefenseBonus();
         int GetDamageBonus();
+        int GetCoinBonus();
     }
 }

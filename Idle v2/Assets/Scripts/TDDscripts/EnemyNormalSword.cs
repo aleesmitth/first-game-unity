@@ -10,12 +10,12 @@ namespace TDDscripts {
             this.TypesOfAttack = new Dictionary<int, ITypeOfAttack> {{0, new BasicAttack()}};
         }
 
-        public void Attack(IAttackingCharacter attackingCharacter) {
-            attackingCharacter.GetAttackedBy(this.TypesOfAttack[0], EnemyNormalSword.BASE_DAMAGE);
+        public void Attack(ICharacter character) {
+            character.GetAttackedBy(this.TypesOfAttack[0], EnemyNormalSword.BASE_DAMAGE);
         }
 
-        public void Attack(IAttackingCharacter attackingCharacter, int extraDamage) {
-            attackingCharacter.GetAttackedBy(this.TypesOfAttack[0], EnemyNormalSword.BASE_DAMAGE + extraDamage);
+        public void Attack(ICharacter character, int extraDamage) {
+            character.GetAttackedBy(this.TypesOfAttack[0], EnemyNormalSword.BASE_DAMAGE + extraDamage);
         }
     }
 }

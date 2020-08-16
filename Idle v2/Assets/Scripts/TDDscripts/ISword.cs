@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 
 namespace TDDscripts {
-    public interface ISword {
-        void Attack(IAttackingCharacter attackingCharacter, int extraDamage);
+    public interface ISword : IStorableItem {
+        void Attack(ICharacter character, int extraDamage);
     }
 }

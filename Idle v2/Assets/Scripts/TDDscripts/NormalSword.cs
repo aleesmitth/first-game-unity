@@ -11,12 +11,12 @@ namespace TDDscripts {
         }
 
 
-        public void Attack(IAttackingCharacter attackingCharacter) {
-            attackingCharacter.GetAttackedBy(this.GetRandomTypeOfAttack(), NormalSword.BASE_DAMAGE);
+        public void Attack(ICharacter character) {
+            character.GetAttackedBy(this.GetRandomTypeOfAttack(), NormalSword.BASE_DAMAGE);
         }
 
-        public void Attack(IAttackingCharacter attackingCharacter, int extraDamage) {
-            attackingCharacter.GetAttackedBy(this.GetRandomTypeOfAttack(), NormalSword.BASE_DAMAGE + extraDamage);
+        public void Attack(ICharacter character, int extraDamage) {
+            character.GetAttackedBy(this.GetRandomTypeOfAttack(), NormalSword.BASE_DAMAGE + extraDamage);
         }
 
         private ITypeOfAttack GetRandomTypeOfAttack() {

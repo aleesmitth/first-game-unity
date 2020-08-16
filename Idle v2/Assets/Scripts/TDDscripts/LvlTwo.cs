@@ -3,6 +3,7 @@
         private const int HEALTH_BONUS = 10;
         private const int DEFENSE_BONUS = 3;
         private const int DAMAGE_BONUS = 5;
+        private const int COIN_BONUS = 30;
         public int GetHealthBonus() {
             return LvlTwo.HEALTH_BONUS;
         }
@@ -13,6 +14,10 @@
 
         public int GetDamageBonus() {
             return LvlTwo.DAMAGE_BONUS;
+        }
+
+        public int GetCoinBonus() {
+            return LvlTwo.COIN_BONUS;
         }
     }
 }

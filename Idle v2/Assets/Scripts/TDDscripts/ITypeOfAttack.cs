@@ -1,6 +1,6 @@
 ﻿namespace TDDscripts {
     public interface ITypeOfAttack {
         
-        void Attack(Stats stats, int baseDamage);
+        void Attack(Stats stats, int damage);
     }
 }
