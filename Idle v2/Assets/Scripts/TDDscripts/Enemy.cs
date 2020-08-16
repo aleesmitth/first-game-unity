@@ -14,8 +14,8 @@
         public int GetCurrentHealth() {
             return stats.GetCurrentHealth();
         }
-        public void GetAttackedBy(ITypeOfAttack typeOfAttack, int swordBaseDamage) {
-            typeOfAttack.Attack(this.stats, swordBaseDamage);
+        public void GetAttackedBy(ITypeOfAttack typeOfAttack, int damage) {
+            typeOfAttack.Attack(this.stats, damage);
         }
         public void GetAttackedBy(ISword sword, int extraDamage) {
             sword.Attack(this, extraDamage);

@@ -3,6 +3,38 @@ using TDDscripts;
 
 namespace Tests {
     public class PlayerTest {
+        public class FunctionalTest {
+            [Test]
+            public void test01_Lvl1PlayerEquipsFireSwordsAndHitsLvl1Enemy() {
+                // arrange
+                Player player = new Player(new LvlOne());
+                Enemy enemy = new Enemy(new LvlOne());
+                var startingHealth = enemy.GetCurrentHealth();
+                
+                //act
+                player.Equip(new FireSword());
+                player.Attack(enemy);
+
+                // assert
+                Assert.LessOrEqual(startingHealth - 40, enemy.GetCurrentHealth());
+                Assert.GreaterOrEqual(startingHealth - 20, enemy.GetCurrentHealth());
+            }
+            [Test]
+            public void test01_Lvl3PlayerEquipsFireSwordsAndHitsLvl3Enemy() {
+                // arrange
+                Player player = new Player(new LvlThree());
+                Enemy enemy = new Enemy(new LvlThree());
+                var startingHealth = enemy.GetCurrentHealth();
+                
+                //act
+                player.Equip(new FireSword());
+                player.Attack(enemy);
+
+                // assert
+                Assert.LessOrEqual(startingHealth - 65, enemy.GetCurrentHealth());
+                Assert.GreaterOrEqual(startingHealth - 30, enemy.GetCurrentHealth());
+            }
+        }
         public class PlayerLvlTest {
             public class HealthTest {
                 [Test]
@@ -11,7 +43,7 @@ namespace Tests {
                     Player player = new Player(new LvlOne());
 
                     // assert
-                    Assert.AreEqual(100, player.getCurrentHealth());
+                    Assert.AreEqual(100, player.GetCurrentHealth());
                 }
                 [Test]
                 public void test02_Lvl2PlayerStartsWith110HP() {
@@ -19,7 +51,7 @@ namespace Tests {
                     Player player = new Player(new LvlTwo());
 
                     // assert
-                    Assert.AreEqual(110, player.getCurrentHealth());
+                    Assert.AreEqual(110, player.GetCurrentHealth());
                 }
                 [Test]
                 public void test03_Lvl3PlayerStartsWith125HP() {
@@ -27,7 +59,7 @@ namespace Tests {
                     Player player = new Player(new LvlThree());
 
                     // assert
-                    Assert.AreEqual(125, player.getCurrentHealth());
+                    Assert.AreEqual(125, player.GetCurrentHealth());
                 }
             }
             public class ArmorTest {
@@ -38,13 +70,13 @@ namespace Tests {
                         // arrange
                         Player player = new Player(new LvlOne());
                         Enemy enemy = new Enemy(new LvlOne());
-                        var health = player.getCurrentHealth();
+                        var health = player.GetCurrentHealth();
 
                         // act
                         enemy.Attack(player);
 
                         // assert
-                        Assert.AreEqual(health - 10, player.getCurrentHealth());
+                        Assert.AreEqual(health - 10, player.GetCurrentHealth());
                     }
                     [Test]
                     public void test02_Lvl1PlayerLoses15HPWhenHitByLvl2Enemy() {
@@ -52,13 +84,13 @@ namespace Tests {
                         // arrange
                         Player player = new Player(new LvlOne());
                         Enemy enemy = new Enemy(new LvlTwo());
-                        var health = player.getCurrentHealth();
+                        var health = player.GetCurrentHealth();
 
                         // act
                         enemy.Attack(player);
 
                         // assert
-                        Assert.AreEqual(health - 15, player.getCurrentHealth());
+                        Assert.AreEqual(health - 15, player.GetCurrentHealth());
                     }
                     [Test]
                     public void test03_Lvl1PlayerLoses25HPWhenHitByLvl3Enemy() {
@@ -66,65 +98,65 @@ namespace Tests {
                         // arrange
                         Player player = new Player(new LvlOne());
                         Enemy enemy = new Enemy(new LvlThree());
-                        var health = player.getCurrentHealth();
+                        var health = player.GetCurrentHealth();
 
                         // act
                         enemy.Attack(player);
 
                         // assert
-                        Assert.AreEqual(health - 25, player.getCurrentHealth());
+                        Assert.AreEqual(health - 25, player.GetCurrentHealth());
                     }
                     [Test]
                     public void test04_Lvl2PlayerLoses7HPWhenHitByLvl1Enemy() {
                         // arrange
                         Player player = new Player(new LvlTwo());
                         Enemy enemy = new Enemy(new LvlOne());
-                        var health = player.getCurrentHealth();
+                        var health = player.GetCurrentHealth();
 
                         // act
                         enemy.Attack(player);
 
                         // assert
-                        Assert.AreEqual(health - 7, player.getCurrentHealth());
+                        Assert.AreEqual(health - 7, player.GetCurrentHealth());
                     }
                     [Test]
                     public void test05_Lvl2PlayerLoses12HPWhenHitByLvl2Enemy() {
                         // arrange
                         Player player = new Player(new LvlTwo());
                         Enemy enemy = new Enemy(new LvlTwo());
-                        var health = player.getCurrentHealth();
+                        var health = player.GetCurrentHealth();
 
                         // act
                         enemy.Attack(player);
 
                         // assert
-                        Assert.AreEqual(health - 12, player.getCurrentHealth());
+                        Assert.AreEqual(health - 12, player.GetCurrentHealth());
                     }
                     [Test]
                     public void test06_Lvl2PlayerLoses22HPWhenHitByLvl3Enemy() {
                         // arrange
                         Player player = new Player(new LvlTwo());
                         Enemy enemy = new Enemy(new LvlThree());
-                        var health = player.getCurrentHealth();
+                        var health = player.GetCurrentHealth();
 
                         // act
                         enemy.Attack(player);
 
                         // assert
-                        Assert.AreEqual(health - 22, player.getCurrentHealth());
+                        Assert.AreEqual(health - 22, player.GetCurrentHealth());
                     }
                     [Test]
                     public void test07_Lvl3PlayerLoses5HPWhenHitByLvl1Enemy() {
                         // arrange
                         Player player = new Player(new LvlThree());
                         Enemy enemy = new Enemy(new LvlOne());
-                        var health = player.getCurrentHealth();
+                        var health = player.GetCurrentHealth();
 
                         // act
                         enemy.Attack(player);
 
                         // assert
-                        Assert.AreEqual(health - 5, player.getCurrentHealth());
+                        Assert.AreEqual(health - 5, player.GetCurrentHealth());
                     }
                     [Test]
                     public void test08_Lvl3PlayerLoses10HPWhenHitByLvl2Enemy() {
@@ -132,13 +164,13 @@ namespace Tests {
                         // arrange
                         Player player = new Player(new LvlThree());
                         Enemy enemy = new Enemy(new LvlTwo());
-                        var health = player.getCurrentHealth();
+                        var health = player.GetCurrentHealth();
 
                         // act
                         enemy.Attack(player);
 
                         // assert
-                        Assert.AreEqual(health - 10, player.getCurrentHealth());
+                        Assert.AreEqual(health - 10, player.GetCurrentHealth());
                     }
                     [Test]
                     public void test09_Lvl3PlayerLoses20HPWhenHitByLvl3Enemy() {
@@ -146,13 +178,13 @@ namespace Tests {
                         // arrange
                         Player player = new Player(new LvlThree());
                         Enemy enemy = new Enemy(new LvlThree());
-                        var health = player.getCurrentHealth();
+                        var health = player.GetCurrentHealth();
 
                         // act
                         enemy.Attack(player);
 
                         // assert
-                        Assert.AreEqual(health - 20, player.getCurrentHealth());
+                        Assert.AreEqual(health - 20, player.GetCurrentHealth());
                     }
                 }
             }
@@ -412,92 +444,152 @@ namespace Tests {
                 }
             }
         }
-        public class BagTest {
-            [Test]
-            public void test01_BagCanStoreNormalSword() {
-                // arrange
-                ItemBag itemBag = new ItemBag();
-                ISword normalSword = new NormalSword();
-                var firstSlotPosition = 1;
+        
+        public class ShopTest {
+            public class CoinBagTest {
+                [Test]
+                public void test01_PlayerBuysNormalSwordAndLosesCoin() {
+                    // arrange
+                    Player player = new Player(new LvlOne());
+                    player.AddCoins(500);
+                    Shop shop = new Shop();
+                    int normalSwordId = 1;
+                
 
-                // act
-                itemBag.StoreItemInSlot(normalSword, firstSlotPosition);
+                    // act
+                    player.BuyItemFromShop(normalSwordId, shop);
 
-                // assert
-                Assert.AreSame(normalSword, itemBag.GetItemStoredInSlot(firstSlotPosition));
-            }
-            [Test]
-            public void test02_BagCanStoreFireSword() {
-                // arrange
-                ItemBag itemBag = new ItemBag();
-                ISword fireSword = new FireSword();
-                var firstSlotPosition = 1;
-
-                // act
-                itemBag.StoreItemInSlot(fireSword, firstSlotPosition);
-
-                // assert
-                Assert.AreSame(fireSword, itemBag.GetItemStoredInSlot(firstSlotPosition));
-            }
-            [Test]
-            public void test03_BagDoesntStoreFireSwordWithAnotherSwordAlreadyThere() {
-                // arrange
-                ItemBag itemBag = new ItemBag();
-                ISword fireSword = new FireSword();
-                ISword normalSword = new NormalSword();
-                var firstSlotPosition = 1;
-
-                // act
-                itemBag.StoreItemInSlot(normalSword, firstSlotPosition);
-                itemBag.StoreItemInSlot(fireSword, firstSlotPosition);
-
-                // assert
-                Assert.AreNotSame(fireSword, itemBag.GetItemStoredInSlot(firstSlotPosition));
-                Assert.AreSame(normalSword, itemBag.GetItemStoredInSlot(firstSlotPosition));
-            }
-            [Test]
-            public void test04_BagCanStore1SwordPerBagSlot() {
-                // arrange
-                ItemBag itemBag = new ItemBag();
-                ISword normalSword = new NormalSword();
-                var firstSlotPosition = 1;
-                var maxSlots = itemBag.GetMaxSlotsAmount();
-
-                // act
-                for (int i = firstSlotPosition; i <= maxSlots; i++){
-                    itemBag.StoreItemInSlot(normalSword, i);
+                    // assert
+                    Assert.AreEqual(300, player.GetCurrentCoins());
                 }
+                [Test]
+                public void test02_PlayerBuysFireSwordAndLosesCoin() {
+                    // arrange
+                    Player player = new Player(new LvlOne());
+                    player.AddCoins(500);
+                    Shop shop = new Shop();
+                    int fireSwordId = 2;
+                
 
-                // assert
-                Assert.IsTrue(itemBag.IsFull());
+                    // act
+                    player.BuyItemFromShop(fireSwordId, shop);
+
+                    // assert
+                    Assert.AreEqual(100, player.GetCurrentCoins());
+                }
+                
             }
             [Test]
-            public void test05_WhenBagDiscardsStoredSwordReturnsTheItem() {
+            public void test01_PlayerBuysNormalSwordAndGetsOneInItemBag() {
                 // arrange
-                ItemBag itemBag = new ItemBag();
-                ISword fireSword = new FireSword();
-                var firstSlotPosition = 1;
+                Player player = new Player(new LvlOne());
+                player.AddCoins(500);
+                Shop shop = new Shop();
+                int normalSwordId = 1;
+                
 
                 // act
-                itemBag.StoreItemInSlot(fireSword, firstSlotPosition);
-                IStorableItem discardedFireSword = itemBag.DiscardItemInSlot(firstSlotPosition);
+                player.BuyItemFromShop(normalSwordId, shop);
 
                 // assert
-                Assert.AreSame(fireSword, discardedFireSword);
+                Assert.IsInstanceOf<NormalSword>(player.GetLastStoredItem());
             }
             [Test]
-            public void test06_WhenBagDiscardsStoredSwordSlotIsEmpty() {
+            public void test02_PlayerBuysFireSwordAndGetsOneInItemBag() {
                 // arrange
-                ItemBag itemBag = new ItemBag();
-                ISword fireSword = new FireSword();
-                var firstSlotPosition = 1;
+                Player player = new Player(new LvlOne());
+                player.AddCoins(500);
+                Shop shop = new Shop();
+                int fireSwordId = 2;
+                
 
                 // act
-                itemBag.StoreItemInSlot(fireSword, firstSlotPosition);
-                itemBag.DiscardItemInSlot(firstSlotPosition);
+                player.BuyItemFromShop(fireSwordId, shop);
 
                 // assert
-                Assert.IsFalse(itemBag.HasItemIn(firstSlotPosition));
+                Assert.IsInstanceOf<FireSword>(player.GetLastStoredItem());
+            }
+        }
+
+        public class InventoryTest {
+            [Test]
+            public void test01_PlayerStartsWithNormalSwordEquipped() {
+                // arrange
+                Player player = new Player(new LvlOne());
+
+                // assert
+                Assert.IsInstanceOf<NormalSword>(player.GetEquippedSword());
+            }
+
+            [Test]
+            public void test02_PlayerCanEquipFireSword() {
+                // arrange
+                Player player = new Player(new LvlOne());
+                
+                //act
+                player.Equip(new FireSword());
+
+                // assert
+                Assert.IsInstanceOf<FireSword>(player.GetEquippedSword());
+            }
+            [Test]
+            public void test03_PlayerCanEquipNormalSwordAfterFireSword() {
+                // arrange
+                Player player = new Player(new LvlOne());
+                
+                //act
+                player.Equip(new FireSword());
+                player.Equip(new NormalSword());
+
+                // assert
+                Assert.IsInstanceOf<NormalSword>(player.GetEquippedSword());
+            }
+            [Test]
+            public void test04_PlayerCanUnequipNormalSword() {
+                // arrange
+                Player player = new Player(new LvlOne());
+                
+                //act
+                player.UnequipSword();
+
+                // assert
+                Assert.IsFalse(player.HasSwordEquipped());
+            }
+            [Test]
+            public void test05_PlayerUnequipedSwordGoesToItemBagFirstAvailableSlot() {
+                // arrange
+                Player player = new Player(new LvlOne());
+                
+                //act
+                player.UnequipSword();
+
+                // assert
+                Assert.IsInstanceOf<NormalSword>(player.GetLastStoredItem());
+            }
+            [Test]
+            public void test06_PlayerUnequipsAndStoresFirstSwordWhenEquippingSecondSwordOnTop() {
+                // arrange
+                Player player = new Player(new LvlOne());
+                
+                //act
+                player.Equip(new FireSword());
+
+                // assert
+                Assert.IsInstanceOf<NormalSword>(player.GetLastStoredItem());
+            }
+            
+            [Test]
+            public void test06_PlayerUnequipsAndStoresFirstSwordWhenEquippingSecondSwordOnTopShowingSameObjectInstance() {
+                // arrange
+                Player player = new Player(new LvlOne());
+                FireSword fireSword = new FireSword();
+                
+                //act
+                player.Equip(fireSword);
+                player.Equip(new NormalSword());
+
+                // assert
+                Assert.AreSame(fireSword, player.GetLastStoredItem());
             }
         }
     }

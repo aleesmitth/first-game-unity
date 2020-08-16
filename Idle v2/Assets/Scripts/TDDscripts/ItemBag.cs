@@ -2,25 +2,30 @@
 
 namespace TDDscripts {
     public class ItemBag {
-        private Dictionary<int, IStorableItem> items;
         private const int MAX_SLOTS = 50;
+        
+        private Dictionary<int, IStorableItem> items;
+        // cache mostly for testing
+        private IStorableItem lastStoredItem;
         public ItemBag() {
             this.items = new Dictionary<int, IStorableItem>();
         }
         public IStorableItem GetItemStoredInSlot(int slotPosition) {
-            if (items.ContainsKey(slotPosition) && SlotNumberIsValid(slotPosition)) {
+            if (items.ContainsKey(slotPosition) && SlotPositionIsValid(slotPosition)) {
                 return items[slotPosition];
             }
             //habria q hacer una excepcion, horrible este return null.
             return null;
         }
         public void StoreItemInSlot(IStorableItem item, int slotPosition) {
-            if (!items.ContainsKey(slotPosition) && this.SlotNumberIsValid(slotPosition)) {
-                items.Add(slotPosition, item);
+            if (!items.ContainsKey(slotPosition) && this.SlotPositionIsValid(slotPosition)) {
+                this.items.Add(slotPosition, item);
+                this.lastStoredItem = item;
+
             }
         }
 
-        private bool SlotNumberIsValid(int slotPosition) {
+        private bool SlotPositionIsValid(int slotPosition) {
             return (slotPosition <= MAX_SLOTS && slotPosition > 0);
         }
         //use intended for testing
@@ -35,7 +40,7 @@ namespace TDDscripts {
 
         public IStorableItem DiscardItemInSlot(int slotPosition) {
             IStorableItem itemDiscarded = null;
-            if (items.ContainsKey(slotPosition) && this.SlotNumberIsValid(slotPosition)) {
+            if (items.ContainsKey(slotPosition) && this.SlotPositionIsValid(slotPosition)) {
                 itemDiscarded = this.GetItemStoredInSlot(slotPosition);
                 items.Remove(slotPosition);
             }
@@ -43,8 +48,27 @@ namespace TDDscripts {
             return itemDiscarded;
         }
 
-        public bool HasItemIn(int slotPosition) {
+        public bool HasItemInSlot(int slotPosition) {
             return items.ContainsKey(slotPosition);
+        }
+        
+        //if slots are full, the item gets lost.. fix this
+        public void StoreItemInFirstAvailableSlot(IStorableItem item) {
+            bool itemStored = false;
+            int slotPosition = 1;
+            while (!itemStored && SlotPositionIsValid(slotPosition)) {
+                if (!this.HasItemInSlot(slotPosition)) {
+                    this.items.Add(slotPosition, item);
+                    this.lastStoredItem = item;
+                    itemStored = true;
+                }
+
+                slotPosition++;
+            }
+        }
+
+        public IStorableItem GetLastStoredItem() {
+            return this.lastStoredItem;
         }
     }
 }

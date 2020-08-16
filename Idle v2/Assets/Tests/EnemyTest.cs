@@ -13,7 +13,6 @@ namespace Tests {
                 // arrange
                 Player player = new Player(new LvlOne());
                 Enemy enemy = new Enemy(new LvlOne());
-                var health = enemy.GetCurrentHealth();
 
                 // act
                 enemy.SetCurrentHealthAtPercentage(1);
@@ -28,7 +27,6 @@ namespace Tests {
                 // arrange
                 Player player = new Player(new LvlOne());
                 Enemy enemy = new Enemy(new LvlTwo());
-                var health = enemy.GetCurrentHealth();
 
                 // act
                 enemy.SetCurrentHealthAtPercentage(1);
@@ -43,7 +41,6 @@ namespace Tests {
                 // arrange
                 Player player = new Player(new LvlOne());
                 Enemy enemy = new Enemy(new LvlThree());
-                var health = enemy.GetCurrentHealth();
 
                 // act
                 enemy.SetCurrentHealthAtPercentage(1);
