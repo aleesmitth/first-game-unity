@@ -15,8 +15,12 @@ namespace TDDscripts {
             character.GetAttackedBy(this.GetRandomTypeOfAttack(), NormalSword.BASE_DAMAGE);
         }
 
-        public void Attack(ICharacter character, int extraDamage) {
-            character.GetAttackedBy(this.GetRandomTypeOfAttack(), NormalSword.BASE_DAMAGE + extraDamage);
+        public void Attack(ICharacter character, int baseDamage) {
+            character.GetAttackedBy(this.GetRandomTypeOfAttack(), NormalSword.BASE_DAMAGE + baseDamage);
+        }
+
+        public int GetAttackPoints() {
+            return NormalSword.BASE_DAMAGE;
         }
 
         private ITypeOfAttack GetRandomTypeOfAttack() {

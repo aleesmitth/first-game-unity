@@ -13,13 +13,12 @@ namespace Tests {
             Shop shop = new Shop();
             CoinBag coinBag = new CoinBag();
             coinBag.AddCoins(500);
-            int normalSwordID = 1;
             
             //act
-            shop.BuyItem(normalSwordID, coinBag);
+            shop.BuyItem(ItemId.NormalSword, coinBag);
             
             //assert
-            Assert.AreEqual(300, coinBag.GetCurrentCoins());
+            Assert.AreEqual(300, coinBag.Coin);
         }
         [Test]
         public void test02_BuyingNormalSwordFromShopGivesMeTheSword() {
@@ -27,10 +26,9 @@ namespace Tests {
             Shop shop = new Shop();
             CoinBag coinBag = new CoinBag();
             coinBag.AddCoins(500);
-            int normalSwordID = 1;
             
             //act
-            IStorableItem normalSword = shop.BuyItem(normalSwordID, coinBag);
+            IStorableItem normalSword = shop.BuyItem(ItemId.NormalSword, coinBag);
             
             //assert
             Assert.IsInstanceOf<NormalSword>(normalSword);
@@ -41,13 +39,12 @@ namespace Tests {
             Shop shop = new Shop();
             CoinBag coinBag = new CoinBag();
             coinBag.AddCoins(500);
-            int fireSwordId = 2;
             
             //act
-            shop.BuyItem(fireSwordId, coinBag);
+            shop.BuyItem(ItemId.FireSword, coinBag);
             
             //assert
-            Assert.AreEqual(100, coinBag.GetCurrentCoins());
+            Assert.AreEqual(100, coinBag.Coin);
         }
         [Test]
         public void test04_BuyingFireSwordFromShopGivesMeTheSword() {
@@ -55,10 +52,9 @@ namespace Tests {
             Shop shop = new Shop();
             CoinBag coinBag = new CoinBag();
             coinBag.AddCoins(500);
-            int fireSwordId = 2;
             
             //act
-            IStorableItem fireSword = shop.BuyItem(fireSwordId, coinBag);
+            IStorableItem fireSword = shop.BuyItem(ItemId.FireSword, coinBag);
             
             //assert
             Assert.IsInstanceOf<FireSword>(fireSword);

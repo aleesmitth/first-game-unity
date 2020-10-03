@@ -1,4 +1,6 @@
-﻿namespace TDDscripts {
+﻿using System;
+
+namespace TDDscripts {
     public partial class Player : IPlayerCharacter {
         private readonly Stats stats;
         private readonly CoinBag coinBag;
@@ -6,23 +8,30 @@
         private readonly Inventory inventory;
 
         public Player(ILvl lvl) {
-            stats = new Stats();
+            stats = new Stats(lvl);
             coinBag = new CoinBag();
             itemBag = new ItemBag();
             inventory = new Inventory();
-            stats.AddLvlBonuses(lvl);
         }
 
-        public int GetCurrentHealth() {
-            return stats.GetCurrentHealth();
+        public int GetCurrentHealthPoints() {
+            return stats.Health;
+        }
+        
+        public int GetDefensePoints() {
+            return stats.Defense;
+        }
+
+        public int GetDamagePoints() {
+            return this.GetEquippedSword().GetAttackPoints() + stats.Damage;
         }
 
         public void GetAttackedBy(ITypeOfAttack typeOfAttack, int damage) {
             typeOfAttack.Attack(stats, damage);
         }
 
-        public void GetAttackedBy(ISword sword, int extraDamage) {
-            sword.Attack(this, extraDamage);
+        public void GetAttackedBy(ISword sword, int baseDamage) {
+            sword.Attack(this, baseDamage);
         }
 
         public void Attack(IEnemyCharacter enemy) {
@@ -32,12 +41,12 @@
             enemy.GetAttackedBy(this.inventory.GetEquippedSword(), this.stats.Damage);
             if (enemy.ReceivedKillingBlow()) {
                 //get reward
-                enemy.GiveRewards(this.coinBag);
+                enemy.GiveRewards(this.coinBag, this);
             }
         }
 
         public int GetCurrentCoins() {
-            return this.coinBag.GetCurrentCoins();
+            return this.coinBag.Coin;
         }
 
         public void SetCurrentHealthAtPercentage(int percentage) {
@@ -78,6 +87,18 @@
 
         public bool HasSwordEquipped() {
             return this.inventory.GetEquippedSword() != null;
+        }
+
+        public int GetCurrentExp() {
+            return this.stats.Experience;
+        }
+
+        public void GainExp(Rewards rewards) {
+            this.stats.GainExp(rewards);
+        }
+
+        public ILvl GetLvl() {
+            return stats.Lvl;
         }
     }
 }

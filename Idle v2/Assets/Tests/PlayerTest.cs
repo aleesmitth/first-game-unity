@@ -9,33 +9,152 @@ namespace Tests {
                 // arrange
                 Player player = new Player(new LvlOne());
                 Enemy enemy = new Enemy(new LvlOne());
-                var startingHealth = enemy.GetCurrentHealth();
+                var startingHealth = enemy.GetCurrentHealthPoints();
                 
                 //act
                 player.Equip(new FireSword());
                 player.Attack(enemy);
 
                 // assert
-                Assert.LessOrEqual(startingHealth - 40, enemy.GetCurrentHealth());
-                Assert.GreaterOrEqual(startingHealth - 20, enemy.GetCurrentHealth());
+                Assert.LessOrEqual(startingHealth - 40, enemy.GetCurrentHealthPoints());
+                Assert.GreaterOrEqual(startingHealth - 20, enemy.GetCurrentHealthPoints());
             }
             [Test]
             public void test01_Lvl3PlayerEquipsFireSwordsAndHitsLvl3Enemy() {
                 // arrange
                 Player player = new Player(new LvlThree());
                 Enemy enemy = new Enemy(new LvlThree());
-                var startingHealth = enemy.GetCurrentHealth();
+                var startingHealth = enemy.GetCurrentHealthPoints();
                 
                 //act
                 player.Equip(new FireSword());
                 player.Attack(enemy);
 
                 // assert
-                Assert.LessOrEqual(startingHealth - 65, enemy.GetCurrentHealth());
-                Assert.GreaterOrEqual(startingHealth - 30, enemy.GetCurrentHealth());
+                Assert.LessOrEqual(startingHealth - 65, enemy.GetCurrentHealthPoints());
+                Assert.GreaterOrEqual(startingHealth - 30, enemy.GetCurrentHealthPoints());
             }
         }
         public class PlayerLvlTest {
+            public class ExperienceTest {
+                [Test]
+                public void test01_PlayerStartsWith0Exp() {
+                    Player player = new Player(new LvlOne());
+                    Assert.AreEqual(0, player.GetCurrentExp());
+                }
+                
+                [Test]
+                public void test02_Lvl1PlayerGets10ExpFromKillingLvl1Enemy() {
+                    
+                    Player player = new Player(new LvlOne());
+                    Enemy enemy = new Enemy(new LvlOne());
+
+                    // act
+                    enemy.SetCurrentHealthAtPercentage(1);
+                    //player kills enemy
+                    player.Attack(enemy);
+
+                    // assert
+                    Assert.AreEqual(10, player.GetCurrentExp());
+                }
+                
+                [Test]
+                public void test03_Lvl1PlayerGets15ExpFromKillingLvl2Enemy() {
+                    
+                    Player player = new Player(new LvlOne());
+                    Enemy enemy = new Enemy(new LvlTwo());
+
+                    // act
+                    enemy.SetCurrentHealthAtPercentage(1);
+                    //player kills enemy
+                    player.Attack(enemy);
+
+                    // assert
+                    Assert.AreEqual(15, player.GetCurrentExp());
+                }
+                
+                [Test]
+                public void test04_Lvl1PlayerGets20ExpFromKillingLvl3Enemy() {
+                    
+                    Player player = new Player(new LvlOne());
+                    Enemy enemy = new Enemy(new LvlThree());
+
+                    // act
+                    enemy.SetCurrentHealthAtPercentage(1);
+                    //player kills enemy
+                    player.Attack(enemy);
+
+                    // assert
+                    Assert.AreEqual(20, player.GetCurrentExp());
+                }
+                
+                [Test]
+                public void test05_Lvl1PlayerLevelsUpAt100Exp() {
+                    //player will gain a total of 100 exp
+                    
+                    Player player = new Player(new LvlOne());
+                    
+                    for (int i = 0; i < 5; i++) {
+                        Enemy enemy = new Enemy(new LvlThree());
+                        enemy.SetCurrentHealthAtPercentage(1);
+                        //player kills enemy and gains 20exp
+                        player.Attack(enemy);
+                    }
+
+                    // player is at 100exp, but turns to 0 for the lvlup
+                    Assert.AreEqual(0, player.GetCurrentExp());
+                }
+                
+                [Test]
+                public void test06_Lvl1PlayerLevelsUpAt100Exp() {
+                    //player will gain a total of 100 exp
+                    
+                    Player player = new Player(new LvlOne());
+
+                    for (int i = 0; i < 5; i++) {
+                        Enemy enemy = new Enemy(new LvlThree());
+                        enemy.SetCurrentHealthAtPercentage(1);
+                        //player kills enemy and gains 20exp
+                        player.Attack(enemy);
+                    }
+
+                    // player level is now of class LvlTwo
+                    Assert.IsInstanceOf<LvlTwo>(player.GetLvl());
+                }
+                
+                [Test]
+                public void test07_Lvl2PlayerLevelsUpAt150Exp() {
+                    //player will gain a total of 160 exp
+                    
+                    Player player = new Player(new LvlTwo());
+
+                    for (int i = 0; i < 8; i++) {
+                        Enemy enemy = new Enemy(new LvlThree());
+                        enemy.SetCurrentHealthAtPercentage(1);
+                        //player kills enemy and gains 20exp
+                        player.Attack(enemy);
+                    }
+
+                    // player level is now of class LvlThree
+                    Assert.IsInstanceOf<LvlThree>(player.GetLvl());
+                }
+                
+                [Test]
+                public void test07_Lvl3PlayerLevelsUpAt200Exp() {
+                    //player will gain a total of 200 exp
+                    
+                    Player player = new Player(new LvlThree());
+
+                    for (int i = 0; i < 10; i++) {
+                        Enemy enemy = new Enemy(new LvlThree());
+                        enemy.SetCurrentHealthAtPercentage(1);
+                        //player kills enemy and gains 20exp
+                        player.Attack(enemy);
+                    }
+                    
+                    Assert.AreEqual(0, player.GetCurrentExp());
+                }
+            }
             public class HealthTest {
                 [Test]
                 public void test01_Lvl1PlayerStartsWith100HP() {
@@ -43,7 +162,7 @@ namespace Tests {
                     Player player = new Player(new LvlOne());
 
                     // assert
-                    Assert.AreEqual(100, player.GetCurrentHealth());
+                    Assert.AreEqual(100, player.GetCurrentHealthPoints());
                 }
                 [Test]
                 public void test02_Lvl2PlayerStartsWith110HP() {
@@ -51,7 +170,7 @@ namespace Tests {
                     Player player = new Player(new LvlTwo());
 
                     // assert
-                    Assert.AreEqual(110, player.GetCurrentHealth());
+                    Assert.AreEqual(110, player.GetCurrentHealthPoints());
                 }
                 [Test]
                 public void test03_Lvl3PlayerStartsWith125HP() {
@@ -59,7 +178,57 @@ namespace Tests {
                     Player player = new Player(new LvlThree());
 
                     // assert
-                    Assert.AreEqual(125, player.GetCurrentHealth());
+                    Assert.AreEqual(125, player.GetCurrentHealthPoints());
+                }
+                
+                [Test]
+                public void test04_Lvl1PlayerLevelsUpAndHas10MoreHP() {
+                    //player will gain a total of 100 exp
+                    
+                    Player player = new Player(new LvlOne());
+
+                    for (int i = 0; i < 5; i++) {
+                        Enemy enemy = new Enemy(new LvlThree());
+                        enemy.SetCurrentHealthAtPercentage(1);
+                        //player kills enemy and gains 20exp
+                        player.Attack(enemy);
+                    }
+
+                    // player level is now of class LvlTwo
+                    Assert.AreEqual(110, player.GetCurrentHealthPoints());
+                }
+                
+                [Test]
+                public void test05_Lvl2PlayerLevelsUpAndHas25MoreHP() {
+                    //player will gain a total of 160 exp
+                    
+                    Player player = new Player(new LvlTwo());
+
+                    for (int i = 0; i < 8; i++) {
+                        Enemy enemy = new Enemy(new LvlThree());
+                        enemy.SetCurrentHealthAtPercentage(1);
+                        //player kills enemy and gains 20exp
+                        player.Attack(enemy);
+                    }
+
+                    // player level is now of class LvlThree
+                    Assert.AreEqual(135, player.GetCurrentHealthPoints());
+                }
+                
+                [Test]
+                public void test06_Lvl3PlayerLevelsUpAndHas25MoreHP() {
+                    //player will gain a total of 200 exp
+                    //TODO hay que arreglar que si instancio un player lvl 3, no aplica bonuses de lvl1,2, solo 3.
+                    Player player = new Player(new LvlThree());
+
+                    for (int i = 0; i < 10; i++) {
+                        Enemy enemy = new Enemy(new LvlThree());
+                        enemy.SetCurrentHealthAtPercentage(1);
+                        //player kills enemy and gains 20exp
+                        player.Attack(enemy);
+                    }
+                    
+                    Assert.AreEqual(150, player.GetCurrentHealthPoints());
                 }
             }
             public class ArmorTest {
@@ -70,13 +239,13 @@ namespace Tests {
                         // arrange
                         Player player = new Player(new LvlOne());
                         Enemy enemy = new Enemy(new LvlOne());
-                        var health = player.GetCurrentHealth();
+                        var health = player.GetCurrentHealthPoints();
 
                         // act
                         enemy.Attack(player);
 
                         // assert
-                        Assert.AreEqual(health - 10, player.GetCurrentHealth());
+                        Assert.AreEqual(health - 10, player.GetCurrentHealthPoints());
                     }
                     [Test]
                     public void test02_Lvl1PlayerLoses15HPWhenHitByLvl2Enemy() {
@@ -84,13 +253,13 @@ namespace Tests {
                         // arrange
                         Player player = new Player(new LvlOne());
                         Enemy enemy = new Enemy(new LvlTwo());
-                        var health = player.GetCurrentHealth();
+                        var health = player.GetCurrentHealthPoints();
 
                         // act
                         enemy.Attack(player);
 
                         // assert
-                        Assert.AreEqual(health - 15, player.GetCurrentHealth());
+                        Assert.AreEqual(health - 15, player.GetCurrentHealthPoints());
                     }
                     [Test]
                     public void test03_Lvl1PlayerLoses25HPWhenHitByLvl3Enemy() {
@@ -98,65 +267,65 @@ namespace Tests {
                         // arrange
                         Player player = new Player(new LvlOne());
                         Enemy enemy = new Enemy(new LvlThree());
-                        var health = player.GetCurrentHealth();
+                        var health = player.GetCurrentHealthPoints();
 
                         // act
                         enemy.Attack(player);
 
                         // assert
-                        Assert.AreEqual(health - 25, player.GetCurrentHealth());
+                        Assert.AreEqual(health - 25, player.GetCurrentHealthPoints());
                     }
                     [Test]
                     public void test04_Lvl2PlayerLoses7HPWhenHitByLvl1Enemy() {
                         // arrange
                         Player player = new Player(new LvlTwo());
                         Enemy enemy = new Enemy(new LvlOne());
-                        var health = player.GetCurrentHealth();
+                        var health = player.GetCurrentHealthPoints();
 
                         // act
                         enemy.Attack(player);
 
                         // assert
-                        Assert.AreEqual(health - 7, player.GetCurrentHealth());
+                        Assert.AreEqual(health - 7, player.GetCurrentHealthPoints());
                     }
                     [Test]
                     public void test05_Lvl2PlayerLoses12HPWhenHitByLvl2Enemy() {
                         // arrange
                         Player player = new Player(new LvlTwo());
                         Enemy enemy = new Enemy(new LvlTwo());
-                        var health = player.GetCurrentHealth();
+                        var health = player.GetCurrentHealthPoints();
 
                         // act
                         enemy.Attack(player);
 
                         // assert
-                        Assert.AreEqual(health - 12, player.GetCurrentHealth());
+                        Assert.AreEqual(health - 12, player.GetCurrentHealthPoints());
                     }
                     [Test]
                     public void test06_Lvl2PlayerLoses22HPWhenHitByLvl3Enemy() {
                         // arrange
                         Player player = new Player(new LvlTwo());
                         Enemy enemy = new Enemy(new LvlThree());
-                        var health = player.GetCurrentHealth();
+                        var health = player.GetCurrentHealthPoints();
 
                         // act
                         enemy.Attack(player);
 
                         // assert
-                        Assert.AreEqual(health - 22, player.GetCurrentHealth());
+                        Assert.AreEqual(health - 22, player.GetCurrentHealthPoints());
                     }
                     [Test]
                     public void test07_Lvl3PlayerLoses5HPWhenHitByLvl1Enemy() {
                         // arrange
                         Player player = new Player(new LvlThree());
                         Enemy enemy = new Enemy(new LvlOne());
-                        var health = player.GetCurrentHealth();
+                        var health = player.GetCurrentHealthPoints();
 
                         // act
                         enemy.Attack(player);
 
                         // assert
-                        Assert.AreEqual(health - 5, player.GetCurrentHealth());
+                        Assert.AreEqual(health - 5, player.GetCurrentHealthPoints());
                     }
                     [Test]
                     public void test08_Lvl3PlayerLoses10HPWhenHitByLvl2Enemy() {
@@ -164,13 +333,13 @@ namespace Tests {
                         // arrange
                         Player player = new Player(new LvlThree());
                         Enemy enemy = new Enemy(new LvlTwo());
-                        var health = player.GetCurrentHealth();
+                        var health = player.GetCurrentHealthPoints();
 
                         // act
                         enemy.Attack(player);
 
                         // assert
-                        Assert.AreEqual(health - 10, player.GetCurrentHealth());
+                        Assert.AreEqual(health - 10, player.GetCurrentHealthPoints());
                     }
                     [Test]
                     public void test09_Lvl3PlayerLoses20HPWhenHitByLvl3Enemy() {
@@ -178,13 +347,13 @@ namespace Tests {
                         // arrange
                         Player player = new Player(new LvlThree());
                         Enemy enemy = new Enemy(new LvlThree());
-                        var health = player.GetCurrentHealth();
+                        var health = player.GetCurrentHealthPoints();
 
                         // act
                         enemy.Attack(player);
 
                         // assert
-                        Assert.AreEqual(health - 20, player.GetCurrentHealth());
+                        Assert.AreEqual(health - 20, player.GetCurrentHealthPoints());
                     }
                 }
             }
@@ -195,13 +364,13 @@ namespace Tests {
                         // arrange
                         Player player = new Player(new LvlOne());
                         Enemy enemy = new Enemy(new LvlOne());
-                        var health = enemy.GetCurrentHealth();
+                        var health = enemy.GetCurrentHealthPoints();
 
                         // act
                         player.Attack(enemy);
 
                         // assert
-                        Assert.LessOrEqual(enemy.GetCurrentHealth(), health - 10);
+                        Assert.LessOrEqual(enemy.GetCurrentHealthPoints(), health - 10);
                     }
 
                     [Test]
@@ -209,13 +378,13 @@ namespace Tests {
                         // arrange
                         Player player = new Player(new LvlOne());
                         Enemy enemy = new Enemy(new LvlOne());
-                        var health = enemy.GetCurrentHealth();
+                        var health = enemy.GetCurrentHealthPoints();
 
                         // act
                         player.Attack(enemy);
 
                         // assert
-                        Assert.GreaterOrEqual(enemy.GetCurrentHealth(), health - 20);
+                        Assert.GreaterOrEqual(enemy.GetCurrentHealthPoints(), health - 20);
                     }
 
                     [Test]
@@ -223,13 +392,13 @@ namespace Tests {
                         // arrange
                         Player player = new Player(new LvlOne());
                         Enemy enemy = new Enemy(new LvlTwo());
-                        var health = enemy.GetCurrentHealth();
+                        var health = enemy.GetCurrentHealthPoints();
 
                         // act
                         player.Attack(enemy);
 
                         // assert
-                        Assert.LessOrEqual(enemy.GetCurrentHealth(), health - 7);
+                        Assert.LessOrEqual(enemy.GetCurrentHealthPoints(), health - 7);
                     }
 
                     [Test]
@@ -237,13 +406,13 @@ namespace Tests {
                         // arrange
                         Player player = new Player(new LvlOne());
                         Enemy enemy = new Enemy(new LvlTwo());
-                        var health = enemy.GetCurrentHealth();
+                        var health = enemy.GetCurrentHealthPoints();
 
                         // act
                         player.Attack(enemy);
 
                         // assert
-                        Assert.GreaterOrEqual(enemy.GetCurrentHealth(), health - 17);
+                        Assert.GreaterOrEqual(enemy.GetCurrentHealthPoints(), health - 17);
                     }
 
                     [Test]
@@ -251,13 +420,13 @@ namespace Tests {
                         // arrange
                         Player player = new Player(new LvlOne());
                         Enemy enemy = new Enemy(new LvlTwo());
-                        var health = enemy.GetCurrentHealth();
+                        var health = enemy.GetCurrentHealthPoints();
 
                         // act
                         player.Attack(enemy);
 
                         // assert
-                        Assert.LessOrEqual(enemy.GetCurrentHealth(), health - 5);
+                        Assert.LessOrEqual(enemy.GetCurrentHealthPoints(), health - 5);
                     }
 
                     [Test]
@@ -265,13 +434,13 @@ namespace Tests {
                         // arrange
                         Player player = new Player(new LvlOne());
                         Enemy enemy = new Enemy(new LvlThree());
-                        var health = enemy.GetCurrentHealth();
+                        var health = enemy.GetCurrentHealthPoints();
 
                         // act
                         player.Attack(enemy);
 
                         // assert
-                        Assert.GreaterOrEqual(enemy.GetCurrentHealth(), health - 15);
+                        Assert.GreaterOrEqual(enemy.GetCurrentHealthPoints(), health - 15);
                     }
 
                     [Test]
@@ -279,13 +448,13 @@ namespace Tests {
                         // arrange
                         Player player = new Player(new LvlTwo());
                         Enemy enemy = new Enemy(new LvlOne());
-                        var health = enemy.GetCurrentHealth();
+                        var health = enemy.GetCurrentHealthPoints();
 
                         // act
                         player.Attack(enemy);
 
                         // assert
-                        Assert.LessOrEqual(enemy.GetCurrentHealth(), health - 15);
+                        Assert.LessOrEqual(enemy.GetCurrentHealthPoints(), health - 15);
                     }
 
                     [Test]
@@ -293,13 +462,13 @@ namespace Tests {
                         // arrange
                         Player player = new Player(new LvlTwo());
                         Enemy enemy = new Enemy(new LvlOne());
-                        var health = enemy.GetCurrentHealth();
+                        var health = enemy.GetCurrentHealthPoints();
 
                         // act
                         player.Attack(enemy);
 
                         // assert
-                        Assert.GreaterOrEqual(enemy.GetCurrentHealth(), health - 30);
+                        Assert.GreaterOrEqual(enemy.GetCurrentHealthPoints(), health - 30);
                     }
 
                     [Test]
@@ -307,13 +476,13 @@ namespace Tests {
                         // arrange
                         Player player = new Player(new LvlTwo());
                         Enemy enemy = new Enemy(new LvlTwo());
-                        var health = enemy.GetCurrentHealth();
+                        var health = enemy.GetCurrentHealthPoints();
 
                         // act
                         player.Attack(enemy);
 
                         // assert
-                        Assert.LessOrEqual(enemy.GetCurrentHealth(), health - 12);
+                        Assert.LessOrEqual(enemy.GetCurrentHealthPoints(), health - 12);
                     }
 
                     [Test]
@@ -321,13 +490,13 @@ namespace Tests {
                         // arrange
                         Player player = new Player(new LvlTwo());
                         Enemy enemy = new Enemy(new LvlTwo());
-                        var health = enemy.GetCurrentHealth();
+                        var health = enemy.GetCurrentHealthPoints();
 
                         // act
                         player.Attack(enemy);
 
                         // assert
-                        Assert.GreaterOrEqual(enemy.GetCurrentHealth(), health - 27);
+                        Assert.GreaterOrEqual(enemy.GetCurrentHealthPoints(), health - 27);
                     }
 
                     [Test]
@@ -335,13 +504,13 @@ namespace Tests {
                         // arrange
                         Player player = new Player(new LvlTwo());
                         Enemy enemy = new Enemy(new LvlThree());
-                        var health = enemy.GetCurrentHealth();
+                        var health = enemy.GetCurrentHealthPoints();
 
                         // act
                         player.Attack(enemy);
 
                         // assert
-                        Assert.LessOrEqual(enemy.GetCurrentHealth(), health - 10);
+                        Assert.LessOrEqual(enemy.GetCurrentHealthPoints(), health - 10);
                     }
 
                     [Test]
@@ -349,13 +518,13 @@ namespace Tests {
                         // arrange
                         Player player = new Player(new LvlTwo());
                         Enemy enemy = new Enemy(new LvlThree());
-                        var health = enemy.GetCurrentHealth();
+                        var health = enemy.GetCurrentHealthPoints();
 
                         // act
                         player.Attack(enemy);
 
                         // assert
-                        Assert.GreaterOrEqual(enemy.GetCurrentHealth(), health - 25);
+                        Assert.GreaterOrEqual(enemy.GetCurrentHealthPoints(), health - 25);
                     }
 
                     [Test]
@@ -363,13 +532,13 @@ namespace Tests {
                         // arrange
                         Player player = new Player(new LvlThree());
                         Enemy enemy = new Enemy(new LvlOne());
-                        var health = enemy.GetCurrentHealth();
+                        var health = enemy.GetCurrentHealthPoints();
 
                         // act
                         player.Attack(enemy);
 
                         // assert
-                        Assert.LessOrEqual(enemy.GetCurrentHealth(), health - 25);
+                        Assert.LessOrEqual(enemy.GetCurrentHealthPoints(), health - 25);
                     }
 
                     [Test]
@@ -377,13 +546,13 @@ namespace Tests {
                         // arrange
                         Player player = new Player(new LvlThree());
                         Enemy enemy = new Enemy(new LvlOne());
-                        var health = enemy.GetCurrentHealth();
+                        var health = enemy.GetCurrentHealthPoints();
 
                         // act
                         player.Attack(enemy);
 
                         // assert
-                        Assert.GreaterOrEqual(enemy.GetCurrentHealth(), health - 50);
+                        Assert.GreaterOrEqual(enemy.GetCurrentHealthPoints(), health - 50);
                     }
 
                     [Test]
@@ -391,13 +560,13 @@ namespace Tests {
                         // arrange
                         Player player = new Player(new LvlThree());
                         Enemy enemy = new Enemy(new LvlTwo());
-                        var health = enemy.GetCurrentHealth();
+                        var health = enemy.GetCurrentHealthPoints();
 
                         // act
                         player.Attack(enemy);
 
                         // assert
-                        Assert.LessOrEqual(enemy.GetCurrentHealth(), health - 22);
+                        Assert.LessOrEqual(enemy.GetCurrentHealthPoints(), health - 22);
                     }
 
                     [Test]
@@ -405,13 +574,13 @@ namespace Tests {
                         // arrange
                         Player player = new Player(new LvlThree());
                         Enemy enemy = new Enemy(new LvlTwo());
-                        var health = enemy.GetCurrentHealth();
+                        var health = enemy.GetCurrentHealthPoints();
 
                         // act
                         player.Attack(enemy);
 
                         // assert
-                        Assert.GreaterOrEqual(enemy.GetCurrentHealth(), health - 47);
+                        Assert.GreaterOrEqual(enemy.GetCurrentHealthPoints(), health - 47);
                     }
 
                     [Test]
@@ -419,13 +588,13 @@ namespace Tests {
                         // arrange
                         Player player = new Player(new LvlThree());
                         Enemy enemy = new Enemy(new LvlThree());
-                        var health = enemy.GetCurrentHealth();
+                        var health = enemy.GetCurrentHealthPoints();
 
                         // act
                         player.Attack(enemy);
 
                         // assert
-                        Assert.LessOrEqual(enemy.GetCurrentHealth(), health - 20);
+                        Assert.LessOrEqual(enemy.GetCurrentHealthPoints(), health - 20);
                     }
 
                     [Test]
@@ -433,13 +602,13 @@ namespace Tests {
                         // arrange
                         Player player = new Player(new LvlThree());
                         Enemy enemy = new Enemy(new LvlThree());
-                        var health = enemy.GetCurrentHealth();
+                        var health = enemy.GetCurrentHealthPoints();
 
                         // act
                         player.Attack(enemy);
 
                         // assert
-                        Assert.GreaterOrEqual(enemy.GetCurrentHealth(), health - 45);
+                        Assert.GreaterOrEqual(enemy.GetCurrentHealthPoints(), health - 45);
                     }
                 }
             }
@@ -453,11 +622,10 @@ namespace Tests {
                     Player player = new Player(new LvlOne());
                     player.AddCoins(500);
                     Shop shop = new Shop();
-                    int normalSwordId = 1;
                 
 
                     // act
-                    player.BuyItemFromShop(normalSwordId, shop);
+                    player.BuyItemFromShop(ItemId.NormalSword, shop);
 
                     // assert
                     Assert.AreEqual(300, player.GetCurrentCoins());
@@ -468,11 +636,10 @@ namespace Tests {
                     Player player = new Player(new LvlOne());
                     player.AddCoins(500);
                     Shop shop = new Shop();
-                    int fireSwordId = 2;
                 
 
                     // act
-                    player.BuyItemFromShop(fireSwordId, shop);
+                    player.BuyItemFromShop(ItemId.FireSword, shop);
 
                     // assert
                     Assert.AreEqual(100, player.GetCurrentCoins());
@@ -485,11 +652,10 @@ namespace Tests {
                 Player player = new Player(new LvlOne());
                 player.AddCoins(500);
                 Shop shop = new Shop();
-                int normalSwordId = 1;
                 
 
                 // act
-                player.BuyItemFromShop(normalSwordId, shop);
+                player.BuyItemFromShop(ItemId.NormalSword, shop);
 
                 // assert
                 Assert.IsInstanceOf<NormalSword>(player.GetLastStoredItem());
@@ -500,11 +666,10 @@ namespace Tests {
                 Player player = new Player(new LvlOne());
                 player.AddCoins(500);
                 Shop shop = new Shop();
-                int fireSwordId = 2;
                 
 
                 // act
-                player.BuyItemFromShop(fireSwordId, shop);
+                player.BuyItemFromShop(ItemId.FireSword, shop);
 
                 // assert
                 Assert.IsInstanceOf<FireSword>(player.GetLastStoredItem());

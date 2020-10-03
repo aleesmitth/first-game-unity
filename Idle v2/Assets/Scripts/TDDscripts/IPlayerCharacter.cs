@@ -1,6 +1,5 @@
 ﻿namespace TDDscripts {
     public interface IPlayerCharacter : ICharacter {
-        int GetCurrentHealth();
         void Attack(IEnemyCharacter enemy);
         int GetCurrentCoins();
         void AddCoins(int coins);
@@ -10,5 +9,7 @@
         void Equip(ISword sword);
         void UnequipSword();
         bool HasSwordEquipped();
+        int GetCurrentExp();
+        void GainExp(Rewards rewards);
     }
 }

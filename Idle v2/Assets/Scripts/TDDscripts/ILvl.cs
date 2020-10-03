@@ -4,5 +4,8 @@
         int GetDefenseBonus();
         int GetDamageBonus();
         int GetCoinBonus();
+        int GetExpBonus();
+        int ExperienceNeeded();
+        ILvl LvlUp();
     }
 }

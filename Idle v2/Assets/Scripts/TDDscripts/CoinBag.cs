@@ -1,24 +1,20 @@
 ﻿namespace TDDscripts {
     public class CoinBag {
-        private int coins;
+        public int Coin { get; private set; }
 
         public CoinBag() {
-            this.coins = 0;
+            this.Coin = 0;
         }
         public void AddCoins(Rewards rewards) {
-            this.coins += rewards.GetCoins();
+            this.Coin += rewards.GetCoins();
         }
         
         public void AddCoins(int coins) {
-            this.coins += coins;
-        }
-
-        public int GetCurrentCoins() {
-            return this.coins;
+            this.Coin += coins;
         }
 
         public void SubstractCoins(int coins) {
-            this.coins -= coins;
+            this.Coin -= coins;
         }
     }
 }

@@ -28,7 +28,7 @@ namespace TDDscripts {
         }
 
         private bool GotEnoughCoins(int itemId, CoinBag coinBag) {
-            return (coinBag.GetCurrentCoins() >= prices[itemId]);
+            return (coinBag.Coin >= prices[itemId]);
         }
     }
 }

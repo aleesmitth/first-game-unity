@@ -6,14 +6,21 @@
         private Rewards rewards;
         public Enemy(ILvl lvl) {
             sword = new EnemyNormalSword();
-            stats = new Stats();
-            rewards = new Rewards();
-            rewards.AddLvlBonuses(lvl);
-            stats.AddLvlBonuses(lvl);
+            stats = new Stats(lvl);
+            rewards = new Rewards(lvl);
         }
-        public int GetCurrentHealth() {
-            return stats.GetCurrentHealth();
+        public int GetCurrentHealthPoints() {
+            return stats.Health;
         }
+
+        public int GetDefensePoints() {
+            return stats.Defense;
+        }
+
+        public int GetDamagePoints() {
+            return sword.GetAttackPoints() + stats.Damage;
+        }
+
         public void GetAttackedBy(ITypeOfAttack typeOfAttack, int damage) {
             typeOfAttack.Attack(this.stats, damage);
         }
@@ -28,8 +35,9 @@
             player.GetAttackedBy(this.sword, this.stats.Damage);
         }
 
-        public void GiveRewards(CoinBag coinBag) {
+        public void GiveRewards(CoinBag coinBag, IPlayerCharacter player) {
             coinBag.AddCoins(rewards);
+            player.GainExp(rewards);
         }
 
         public void SetCurrentHealthAtPercentage(int percentage) {

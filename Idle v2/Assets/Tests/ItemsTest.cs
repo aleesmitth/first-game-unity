@@ -11,13 +11,13 @@ namespace Tests {
                     Enemy enemy = new Enemy(new LvlOne());
                     ITypeOfAttack normalAttack = new BasicAttack();
 
-                    int health = enemy.GetCurrentHealth();
+                    int health = enemy.GetCurrentHealthPoints();
 
                     //act
                     enemy.GetAttackedBy(normalAttack, 10);
 
                     //assert
-                    Assert.AreEqual(health - 10, enemy.GetCurrentHealth());
+                    Assert.AreEqual(health - 10, enemy.GetCurrentHealthPoints());
 
                 }
 
@@ -27,13 +27,13 @@ namespace Tests {
                     Enemy enemy = new Enemy(new LvlOne());
                     ITypeOfAttack criticalAttack = new CriticalAttack();
 
-                    int health = enemy.GetCurrentHealth();
+                    int health = enemy.GetCurrentHealthPoints();
 
                     //act
                     enemy.GetAttackedBy(criticalAttack, 10);
 
                     //assert
-                    Assert.AreEqual(health - 20, enemy.GetCurrentHealth());
+                    Assert.AreEqual(health - 20, enemy.GetCurrentHealthPoints());
 
                 }
 
@@ -44,13 +44,13 @@ namespace Tests {
                     ISword normalSword = new NormalSword();
                     ITypeOfAttack criticalAttack = new CriticalAttack();
 
-                    int health = enemy.GetCurrentHealth();
+                    int health = enemy.GetCurrentHealthPoints();
 
                     //act
                     enemy.GetAttackedBy(normalSword, 0);
 
                     //assert
-                    Assert.LessOrEqual(enemy.GetCurrentHealth(), health - 10);
+                    Assert.LessOrEqual(enemy.GetCurrentHealthPoints(), health - 10);
 
                 }
 
@@ -61,13 +61,13 @@ namespace Tests {
                     ISword normalSword = new NormalSword();
                     ITypeOfAttack criticalAttack = new CriticalAttack();
 
-                    int health = enemy.GetCurrentHealth();
+                    int health = enemy.GetCurrentHealthPoints();
 
                     //act
                     enemy.GetAttackedBy(normalSword, 0);
 
                     //assert
-                    Assert.GreaterOrEqual(enemy.GetCurrentHealth(), health - 20);
+                    Assert.GreaterOrEqual(enemy.GetCurrentHealthPoints(), health - 20);
 
                 }
             }
@@ -80,13 +80,13 @@ namespace Tests {
                     ISword fireSword = new FireSword();
                     ITypeOfAttack criticalAttack = new CriticalAttack();
 
-                    int health = enemy.GetCurrentHealth();
+                    int health = enemy.GetCurrentHealthPoints();
 
                     //act
                     enemy.GetAttackedBy(fireSword, 0);
 
                     //assert
-                    Assert.LessOrEqual(enemy.GetCurrentHealth(), health - 20);
+                    Assert.LessOrEqual(enemy.GetCurrentHealthPoints(), health - 20);
 
                 }
 
@@ -97,13 +97,13 @@ namespace Tests {
                     ISword fireSword = new FireSword();
                     ITypeOfAttack criticalAttack = new CriticalAttack();
 
-                    int health = enemy.GetCurrentHealth();
+                    int health = enemy.GetCurrentHealthPoints();
 
                     //act
                     enemy.GetAttackedBy(fireSword, 0);
 
                     //assert
-                    Assert.GreaterOrEqual(enemy.GetCurrentHealth(), health - 40);
+                    Assert.GreaterOrEqual(enemy.GetCurrentHealthPoints(), health - 40);
 
                 }
             }

@@ -6,5 +6,10 @@
         //method mostly for testing killing blows
         void SetCurrentHealthAtPercentage(int percentage);
         bool ReceivedKillingBlow();
+        
+        //ui methods
+        int GetCurrentHealthPoints();
+        int GetDefensePoints();
+        int GetDamagePoints();
     }
 }

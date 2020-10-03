@@ -2,6 +2,7 @@
 
 namespace TDDscripts {
     public interface ISword : IStorableItem {
-        void Attack(ICharacter character, int extraDamage);
+        void Attack(ICharacter character, int baseDamage);
+        int GetAttackPoints();
     }
 }
